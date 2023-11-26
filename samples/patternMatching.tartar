@@ -1,0 +1,26 @@
+def void Main() {
+    var List<int> a;
+    a.Add(1);
+    a.Add(2);
+    var bool b = False;
+    var string c = "abc";
+    match (a[0], b, c, 2.56)
+    {
+        case (a[0] > a[1], not b == True, _, INT)
+        {
+            Print("Salygas atitiko 1");
+        }
+        case (INT, INT, INT, INT)
+        {
+            Print("Salygas atitiko 2");
+        }
+        case ((a[1] > a[0]) and (a.Size() == 2), not (b or False), (c + "d") == "abcd", REAL)
+        {
+            Print("Salygas atitiko 3");
+        }
+        default
+        {
+            Print("Salygu neatitiko");
+        }
+    }
+}

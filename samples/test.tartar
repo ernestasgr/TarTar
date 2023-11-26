@@ -1,0 +1,62 @@
+
+def void Main()
+{
+
+val int h = 2;
+            h=3;
+            h=h+78;
+            Print("VAL");
+            Print(h);
+    var int g = 2;
+    g=3;
+    Print("VAR");
+    Print(g);
+    val int f = 2;
+        f=3;
+        Print("VAL");
+        Print(f);
+    val bool ppppp = 1;
+            ppppp=0;
+            Print("VAL");
+            Print(ppppp);
+    val int v=2;
+    var int z=3;
+    z=4;
+    v= 84;
+    Print("VAR");
+    Print(z);
+    Print("VAL");
+    Print(v);
+
+    var Dictionary<string, bool> dict;
+    dict.Put("abc", True);
+    dict.Put("def", False);
+    Print(dict.Size());
+    Print(dict["abc"]);
+    Print(dict["def"]);
+    Print("");
+    foreach(var string i; var bool j in dict) {
+        Print("Key: " + i);
+        Print("Value: " + ToString(j));
+        if (ToString(i) == "abc") {
+            dict.Put("abc", False);
+        }
+
+        Print("----");
+    }
+    foreach(var string y; var bool o in dict) {
+            Print("Key: " + y);
+            Print("Value: " + ToString(o));
+        }
+
+    var List<int> list;
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+
+    foreach(var int lol in list) {
+        Print(lol);
+    }
+}

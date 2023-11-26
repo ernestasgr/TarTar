@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="glang-1.0.jar" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/target/tartar-1.0.jar" />
+    <option name="PROGRAM_PARAMETERS" value="samples/test.tartar" />
+    <option name="WORKING_DIRECTORY" value="C:\Users\ernes\Documents\University\Programavimo Kalbu Teorija\projektas2022\tartar-visitor-master" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2" />
+  </configuration>
+</component>

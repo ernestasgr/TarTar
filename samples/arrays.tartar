@@ -1,0 +1,79 @@
+def void Main() {
+    var List<int> list;
+    var List<int> list2;
+    Print("list dydyis: " + ToString(list.Size()));
+
+    list.Add(1);
+    list2.Add(2);
+    list2.Add(3);
+    Print("list dydyis po Add: " + ToString(list.Size()));
+    for(var int j = 0; j < list.Size(); j += 1;) {
+        Print(list[j]);
+    }
+    Print("list2 dydyis po Add: " + ToString(list2.Size()));
+    for(var int k = 0; k < list2.Size(); k += 1;) {
+        Print(list2[k]);
+    }
+
+    list.AddRange(list2);
+    Print("list dydyis po AddRange: " + ToString(list.Size()));
+    for(var int l = 0; l < list.Size(); l += 1;) {
+        Print(list[l]);
+    }
+
+    list.Remove(1);
+    Print("list dydyis po Remove 1: " + ToString(list.Size()));
+    for(var int m = 0; m < list.Size(); m += 1;) {
+        Print(list[m]);
+    }
+
+    list.Remove(0);
+    Print("list dydyis po Remove 0: " + ToString(list.Size()));
+    for(var int n = 0; n < list.Size(); n += 1;) {
+        Print(list[n]);
+    }
+
+    list.RemoveAt(0);
+    Print("list dydyis po RemoveAt 0: " + ToString(list.Size()));
+    for(var int o = 0; o < list.Size(); o += 1;) {
+        Print(list[o]);
+    }
+
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+    list.Add(1);
+    Print("list dydyis po 5 Add: " + ToString(list.Size()));
+    for(var int p = 0; p < list.Size(); p += 1;) {
+        Print(list[p]);
+    }
+
+    list.RemoveAll(1);
+    Print("list dydyis po RemoveAll 1: " + ToString(list.Size()));
+    for(var int q = 0; q < list.Size(); q += 1;) {
+        Print(list[q]);
+    }
+
+    list.Clear();
+    Print("list dydyis po Clear: " + ToString(list.Size()));
+    for(var int r = 0; r < list.Size(); r += 1;) {
+        Print(list[r]);
+    }
+
+    list.Add(1);
+    Print("list dydyis po Add: " + ToString(list.Size()));
+    for(var int s = 0; s < list.Size(); s += 1;) {
+        Print(list[s]);
+    }
+
+    Print("list yra 0: " + ToString(list.Contains(0)));
+    Print("list yra 1: " + ToString(list.Contains(1)));
+
+    var Dictionary<string, bool> dict;
+    dict.Put("abc", True);
+    dict.Put("def", False);
+    Print("dict dydis: " + ToString(dict.Size()));
+    Print(dict["abc"]);
+    Print(dict["def"]);
+}

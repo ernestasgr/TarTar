@@ -1,0 +1,42 @@
+def int fibonacciRecursive(int arg) {
+    match(arg) {
+        case((arg == 0) or (arg == 1)) {
+            return arg;
+        }
+        default {
+            return fibonacciRecursive(arg - 1) + fibonacciRecursive(arg - 2);
+        }
+    }
+}
+
+def int fibonacciIterative(int arg) {
+    var List<int> sequence;
+    sequence.Add(0);
+    sequence.Add(1);
+    for(var int i = 2; i <= arg; i += 1;) {
+        sequence.Add(sequence[i - 2] + sequence[i - 1]);
+    }
+    return sequence[arg];
+}
+
+
+def void Main() {
+    var string a = "";
+    var string b = "";
+
+    Print("Pirmi 10 Fibonacci sekos elementu:");
+    Print("  Rekursiniu budu:");
+    for(var int i = 0; i < 10; i += 1;) {
+        var int resultA = fibonacciRecursive(i);
+        a += ToString(resultA) + "\n";
+        Print("    " + ToString(resultA));
+    }
+    Print("  Iteratyviu budu:");
+    for(var int j = 0; j < 10; j += 1;) {
+        var int resultB = fibonacciRecursive(j);
+        b += ToString(resultB) + "\n";
+        Print("    " + ToString(resultB));
+    }
+    FilePrint("samples/fibonacciRecursive.txt", a);
+    FilePrint("samples/fibonacciIterative.txt", b);
+}
